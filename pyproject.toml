@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "slippers"
-version = "0.6.0a0"
+version = "0.6.2"
 description = "Build reusable components in Django without writing a single line of Python."
 authors = ["Mitchel Cabuloy <mixxorz@gmail.com>"]
 keywords = ["django", "components"]
@@ -14,10 +14,10 @@ classifiers = [
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Framework :: Django",
-    "Framework :: Django :: 2.2",
-    "Framework :: Django :: 3.2",
-    "Framework :: Django :: 4.0",
-    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
 ]
 include = [
     "LICENSE",
@@ -26,20 +26,19 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.7.0"
+python = ">=3.8.0"
 Django = ">=3.2"
 PyYAML = ">=5.4.0"
-typeguard = ">=2.13.3"
-rich = ">=12.6.0"
+typeguard = "^2.13.3"
 typing-extensions = ">=4.4.0"
 
 [tool.poetry.dev-dependencies]
-black = "^22.3.0"
-isort = "^5.9.2"
-flake8 = "^3.9.2"
-ipdb = "^0.13.9"
-tox = "^3.23.1"
-twine = "^4.0.1"
+black = "^23.7.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+ipdb = "^0.13.13"
+tox = "^4.6.4"
+twine = "^4.0.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
